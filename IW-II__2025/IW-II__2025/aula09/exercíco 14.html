@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exercício 14</title>
+ <script>
+ function trocarImagem(imagem) {
+   if (imagem.src.includes("figura2.jpg")) {
+     imagem.src = "figura1.jpg";
+   } else {
+     imagem.src = "figura2.jpg";
+   }
+ }
+ </script> 
+ <style>
+   img {
+     width: 300px;
+     height: 300px;
+   }
+ </style>
+</head>
+<body>
+ Passe o mouse sobre a imagem: <br><br>
+ <img src="figura2.jpg" onclick="trocarImagem(this)"><br><br>
+ 1) Agora padronize os tamanhos das imagens<br><br>
+ 2) Mude o evento para que as imagens sejam trocadas ao clicar com o mouse.
+</body>
+</html>
