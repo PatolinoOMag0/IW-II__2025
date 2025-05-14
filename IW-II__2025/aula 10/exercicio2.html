@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Ação</title>
+</head>
+<body>
+    <button id="botao" onclick="excloi()">EXCLUIR</button>
+
+    <script>
+        function excloi() {
+            if (confirm("Você quer excluir tudo mesmo?")) {
+                alert("Conteúdo excluído!");
+            } else {
+                alert("Ação recusada!");
+            }
+        }
+    </script>
+</body>
+</html>
+

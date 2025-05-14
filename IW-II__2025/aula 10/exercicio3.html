@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Valor do Input</title>
+</head>
+<body>
+    <input type="text" id="caixa" placeholder="Digite um Texto" />
+    <button id="botao" onclick="enviar()">ENVIAR</button>
+
+    <script>
+        let ultimoValor = "";
+
+        function enviar() {
+            const input = document.getElementById("caixa");
+            const valorAtual = input.value;
+
+            if (valorAtual !== ultimoValor) {
+                alert(`Você digitou: ${valorAtual}`);
+                ultimoValor = valorAtual; 
+            }
+        }
+    </script>
+</body>
+</html>
